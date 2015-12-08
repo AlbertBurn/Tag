@@ -1,45 +1,101 @@
 body {
-    background-color: gainsboro;
-    background-image: url(img/wall.jpg);
-    margin: 0 auto;
+    background-image: url('img/wall.jpg');
+    color: #000305;
+    font-size: 87.5%; 
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    }
+    
+.body {
+    clear: both; 
+    margin: 0 auto; 
     width: 70%;
-    height: 100%;
-    clear: both;
 }
+    
+/* ---------links----------------*/
+a {
+    outline: 0;
+    }
 
-a{
-    color: lightgreen;
+a img {
+    border: 0px; 
     text-decoration: none;
 }
 
-.mainHeader nav{
-    background-color: steelblue;
-    height: 70px;
+a:link, a:visited {
+    color: lightgreen;
+    padding: 0 1px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #FF8C00;
+    text-decoration: none;
+}
+
+/*-------------Navigation-----------------*/
+   
+.mainHeader nav {
+    background: steelblue;
+    font-size: 1.5em;
+    height: 50px;
+    line-height: 30px;
+    margin: 0 auto 30px auto;
+    text-align: center;
     border-style: outset;
     border-width: 0.2em;
     border-color: steelblue;
-    font-family: comic sans ms,Times, monospace;
-    font-size: 40px;
-    margin-top: 2%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
-
+    
 .mainHeader nav ul {
-    list-style: none;
+    list-style: none; 
     margin: 0 auto;
 }
 
-.mainHeader nav ul li{
-    float: left;
+.mainHeader nav ul li {
+    float: left; 
     display: inline; 
 }
-
+    
 .mainHeader nav a:link, .mainHeader nav a:visited {
+    color: lightgreen;
     display: inline-block;
-    padding: 15px 25px;
+    height: 30px;
+    padding: 5px 23px;
+    text-decoration: none;
+}
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+    color: #FF8C00;
+    text-shadow: none !important;
+}
+    
+.mainHeader nav li a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
-.mainHeader nav ul li a{
+.mainHeader img {
+    width: 30%;
+    height: auto;
+    margin: 3% 0;
+}
 
+/*-------Content-------------------------*/
+
+.mainContent {
+    overflow: hidden;
+    line-height: 25px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 .games-name p{
@@ -66,8 +122,8 @@ a{
 }
 
 #field td:hover {
-	background-color: steelblue;
-	cursor: hand;
+    background-color: steelblue;
+    cursor: hand;
 }
 
 .button{
@@ -81,54 +137,132 @@ button {
     margin: auto;
 }
 
-.mainFooter{
+.post-info {
+    font-style: italic;
+    color: #999;
+    font-size: 85%;
+}
+
+/*---------Footer--------------*/
+
+.mainFooter {
     width: 100%;
-    height: 40px;
-    float: right;
+    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 0;
     background-color: steelblue;
-    margin: 2% 0;
+    border-style: outset;
+    border-width: 0.2em;
+    border-color: steelblue;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; 
+    color: #FFF;    
 }
 
-.mainFooter p{
-    width: 92%;
-    margin: 10px auto;
-    color: steelblue;
+.mainFooter p {
+    width: 91%;
+    margin: 2% auto;
 }
 
+/*other resolution*/
 
-
-@media only screen and (min-width: 150px) and (max-width: 600px)
+@media only screen and (min-width : 150px) and (max-width : 780px)
 {
-
     .body {
-        width: 90% ;
-        font-size: 95%;
+        clear: both; 
+        margin: 0 auto; 
+        width: 90%;
+        font-size: 90%;
     }
-
-    .mainHeader nav{
-        height: 160px;
+    
+    .mainHeader nav {
+        background: steelblue;
+        font-size: 1.143em;
+        height: 120px;
+        line-height: 30px;
+        margin-bottom: 0;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
     }
-
+        
     .mainHeader nav ul {
+        list-style: none; 
+        margin: 0 auto;
         padding-left: 0;
     }
-
-    .mainHeader nav ul li{
-        width:100%;
-        text-align: center;
+    
+    .mainHeader nav li {
+        margin-left: 0 auto;
+        width: 100%;
     }
-
+    
     .mainHeader nav a:link, .mainHeader nav a:visited {
-        padding: 15px 25px;
-        height: 20px;
+        color: lightgreen;
         display: block;
-        font-size: 20px;
+        height: 30px;
+        padding: 5px 0;
+        text-decoration: none;
     }
-
+    
+    .mainHeader nav a:hover, .mainHeader nav a:active,
+    .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+        color: #FF8C00;
+        text-shadow: none !important;
+    }
+        
+    .mainHeader nav li a {
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+            
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    
+    .mainHeader img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+    
+    .mainContent {
+        overflow: hidden;
+        line-height: 25px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+    
     #field td{
         font-size: 2em;
         height:50px;
         width: 50px;
     }
+
+    .post-info {
+        display: none;
+    }
+        
+    .mainFooter {
+        width: 100%;
+        float: left;
+        margin: 2% 0;
+        padding-left: 0;
+        background-color: steelblue;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; 
+        color: #FFF;    
+    }
     
+    .mainFooter p {
+        width: 86%;
+        margin: 2% auto;
+    }
 }
